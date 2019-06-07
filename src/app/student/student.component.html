@@ -1,0 +1,31 @@
+<table>
+    <tr>
+            <th [attr.colspan]="columnSpan">Student Details</th>
+    </tr>
+    <tr>
+        <th>firstname</th>
+        <th>lastname</th>
+        <th>city</th>
+        <th>gender</th>
+    </tr>
+    <tr>
+        <td>{{firstName}}</td>
+        <td>{{lastName}}</td>
+        <td>{{city}}</td>
+        <td>{{gender}}</td>
+    </tr>
+</table>
+    <p>
+        <img [src] = "imagePath" width="200px" height="200px">
+    </p>
+    <p>
+        <img src = "{{imagePath}}" width="200px" height="200px">
+    </p>
+    <p>
+        <input [(ngModel)]="UserName">
+        {{UserName}}
+    </p>
+    <p>
+        <button (click)="counter()">Counter</button>
+        <button (click)="reset()">Reset</button>
+    </p>

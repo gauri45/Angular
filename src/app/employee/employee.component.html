@@ -1,0 +1,44 @@
+<h1>Show Details</h1>
+<table>
+    <!-- Attribute Binding -->
+    <tr>
+        <th [attr.colspan]="columnSpan">Employee Details</th>
+    </tr>
+    <tr>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Address</th>
+        <th>Gender</th>
+    </tr>
+    <!-- Interpollation -->
+    <tr>
+        <td>{{FirstName}}</td>
+        <td>{{LastName}}</td>
+        <td>{{Address}}</td>
+        <td>{{Gender}}</td>
+    </tr>
+</table>
+<!-- Property binding -->
+<p>
+    <img [src] = "imagePath" width="200px" height="250px">
+</p>
+<p>
+    <img src = "{{imagePath}}" width="200px" height="250px">
+</p><br>
+
+<!-- Two-way data binding -->
+<p>
+        <input [(ngModel)] = "name">
+        {{name}}
+    </p>
+    
+<!-- <button [disabled]="isDisable">Submit</button> -->
+<!-- Event Binding -->
+<p>{{count}}</p>
+<p>
+<button  (click) = "counter()">counter</button>
+<button (click) = "reset()">Reset</button>
+</p>
+<p>
+    <button (click) = "showDetails()">{{show ? 'hide' : 'show'}}Details</button>
+</p>
